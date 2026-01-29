@@ -2,6 +2,7 @@ import "./App.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Container from "./components/Container";
+import Counter from "./components/Counter";
 
 function App() {
   const date = new Date().getFullYear();
@@ -11,6 +12,8 @@ function App() {
         <Header title="React Profile" />
         <p>This is the main component</p>
         <Footer year={date} />
+
+        <Counter />
       </Container>
     </div>
   );
