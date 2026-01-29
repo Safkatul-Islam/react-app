@@ -1,27 +1,17 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
-
-function Header({ title }) {
-  return (
-    <header>
-      <h1> {title} </h1>
-    </header>
-  );
-}
-
-function Footer({ year }) {
-  return <footer>Copyright {year}</footer>;
-}
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Container from "./components/Container";
 
 function App() {
   const date = new Date().getFullYear();
   return (
     <div>
-      <Header title="React Profile" />
-      <p>This is the main component</p>
-      <Footer year={date} />
+      <Container>
+        <Header title="React Profile" />
+        <p>This is the main component</p>
+        <Footer year={date} />
+      </Container>
     </div>
   );
 }
