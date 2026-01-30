@@ -12,9 +12,7 @@ function TechList() {
   };
 
   return (
-    <div>
-      {" "}
-      {/* Wrap in a div to keep HTML valid */}
+    <div>   {/* Wrap in a div to keep HTML valid */}
       <ul>
         {techList.map((tech) => (
           // Use the value as key (if unique)
