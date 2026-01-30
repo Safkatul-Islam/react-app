@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import Container from "./components/Container";
 import Counter from "./components/Counter";
 import TechList from "./components/TechList";
+import Tech from "./components/Tech";
 
 function App() {
   const date = new Date().getFullYear();
@@ -17,6 +18,8 @@ function App() {
         <Counter />
 
         <TechList />
+
+        <Tech />
       </Container>
     </div>
   );

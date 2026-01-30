@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Tech from "./Tech";
 
 function TechList() {
   // Initial state can be defined inside too
@@ -24,3 +25,5 @@ function TechList() {
     </div>
   );
 }
+
+export default TechList;
