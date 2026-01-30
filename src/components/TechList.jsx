@@ -1,18 +1,28 @@
 import { useState } from "react";
 
-const techs = ["JavaScript", "Python", "Java"];
-
 function TechList() {
-    const [techList, setTechList] = useState(techs);
-    return (
-        <ul>
-            {techList.map((tech, techKey) => (
-                <li key={techKey}>{tech}</li>
-            ))}
+  // Initial state can be defined inside too
+  const [techList, setTechList] = useState(["JavaScript", "Python", "Java"]);
 
-            <button onClick={() => setTechList([...techList, "React"])}>Add React</button>
-        </ul>
-    );
+  const addTech = () => {
+    // Guard Clause: Prevent duplicates if using string as key
+    if (techList.includes("React")) return;
+
+    setTechList([...techList, "React"]);
+  };
+
+  return (
+    <div>
+      {" "}
+      {/* Wrap in a div to keep HTML valid */}
+      <ul>
+        {techList.map((tech) => (
+          // Use the value as key (if unique)
+          <li key={tech}>{tech}</li>
+        ))}
+      </ul>
+      {/* Button lives outside the list */}
+      <button onClick={addTech}>Add React</button>
+    </div>
+  );
 }
-
-export default TechList;
