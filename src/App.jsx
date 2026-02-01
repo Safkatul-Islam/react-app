@@ -5,6 +5,7 @@ import Container from "./components/Container";
 import Counter from "./components/Counter";
 import TechList from "./components/TechList";
 import Tech from "./components/Tech";
+import ContactManager from "./components/ContactManager";
 
 function App() {
   const date = new Date().getFullYear();
@@ -20,6 +21,8 @@ function App() {
         <TechList />
 
         <Tech />
+
+        <ContactManager />
       </Container>
     </div>
   );
