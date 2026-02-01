@@ -43,7 +43,7 @@ function Tech() {
                     // CONTROLLED: The input only shows what React allows
                     value={newTech}
                     // LISTENER: When user types, update React state immediately
-                    onChange={(e) => e.target.value}
+                    onChange={(e) => setTech(e.target.value)}
                     placeholder="Enter a technology..."
                 />
                 <button type="submit">Add Tech</button>
