@@ -6,6 +6,7 @@ import Counter from "./components/Counter";
 import TechList from "./components/TechList";
 import Tech from "./components/Tech";
 import ContactManager from "./components/ContactManager";
+import Effect from "./components/Effect";
 
 function App() {
   const date = new Date().getFullYear();
@@ -16,13 +17,15 @@ function App() {
         <p>This is the main component</p>
         <Footer year={date} />
 
-        <Counter />
+        {/* <Counter /> */}
 
-        <TechList />
+        {/* <TechList /> */}
 
-        <Tech />
+        {/* <Tech /> */}
 
-        <ContactManager />
+        {/* <ContactManager /> */}
+
+        <Effect />
       </Container>
     </div>
   );
