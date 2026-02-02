@@ -7,6 +7,7 @@ import TechList from "./components/TechList";
 import Tech from "./components/Tech";
 import ContactManager from "./components/ContactManager";
 import Effect from "./components/Effect";
+import UserFetcher from "./components/UserFetcher";
 
 function App() {
   const date = new Date().getFullYear();
@@ -25,7 +26,9 @@ function App() {
 
         {/* <ContactManager /> */}
 
-        <Effect />
+        {/* <Effect /> */}
+
+        <UserFetcher />
       </Container>
     </div>
   );
