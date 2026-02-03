@@ -8,6 +8,7 @@ import Tech from "./components/Tech";
 import ContactManager from "./components/ContactManager";
 import Effect from "./components/Effect";
 import UserFetcher from "./components/UserFetcher";
+import FocusInput from "./components/FocusInput";
 
 function App() {
   const date = new Date().getFullYear();
@@ -28,7 +29,9 @@ function App() {
 
         {/* <Effect /> */}
 
-        <UserFetcher />
+        {/* <UserFetcher /> */}
+
+        <FocusInput />
       </Container>
     </div>
   );

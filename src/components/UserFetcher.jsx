@@ -16,7 +16,7 @@ function UserFetcher() {
             } catch (error) {
                 console.error(`Error fetching data: ${error}`);
             } finally {
-                setLoading(true);  // Stop loading (success or fail)
+                setLoading(false);  // Stop loading (success or fail)
             }
         };
 
